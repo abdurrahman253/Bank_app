@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank App</title>
+  <link rel="shortcut icon" href="./payoo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./tailwind.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="flex flex-col items-center justify-center bg-[#F4F5F7] min-h-screen">
+  
+  <!-- Navbar -->
+  <nav class="w-full max-w-lg h-[5.25rem] flex justify-between px-4 items-center bg-white shadow-sm">
+    <div class="flex gap-2 items-center">
+      <img src="./assets/Group.png" class="w-10 h-10 object-contain" alt="">
+      <div>
+        <h2 class="text-[#080808d3] font-extrabold text-[1.1rem]">$ 
+          <span id="available_balance">45000</span>
+        </h2>
+        <p class="text-[#08080877] text-sm">Available Balance</p>
+      </div>
+    </div>
+
+    <button class="btn btn-sm btn-outline rounded-lg bg-[#08080810]">
+      <i class="rotate-180 fa-solid fa-arrow-right-from-bracket"></i> Logout
+    </button>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section class="w-full max-w-lg px-4 bg-white rounded-b-2xl">
+    <div class="mt-6 mb-4">
+      <h2 class="text-xl text-[#080808] font-semibold">🔥 Welcome to Payooo!</h2>
+      <p class="text-[#08080877] text-sm mt-2">
+        Enjoy easy and convenient financial services with us. Cashout charge is low and secure.
+      </p>
+    </div>
+
+    <!-- Grid Menu -->
+    <div class="grid grid-cols-3 gap-3 pb-6">
+      <div class="flex flex-col items-center justify-center p-2 bg-white border border-gray-200 rounded-xl">
+        <img src="./assets/wallet1.png" class="w-10 h-10 object-contain" alt="">
+        <h2 class="text-sm mt-1">Add Money</h2>
+      </div>
+      <div class="flex flex-col items-center justify-center p-2 bg-white border border-gray-200 rounded-xl">
+        <img src="./assets/send1.png" class="w-10 h-10 object-contain" alt="">
+        <h2 class="text-sm mt-1">Cashout</h2>
+      </div>
+      <div class="flex flex-col items-center justify-center p-2 bg-white border border-gray-200 rounded-xl">
+        <img src="./assets/money1.png" class="w-10 h-10 object-contain" alt="">
+        <h2 class="text-sm mt-1">Transfer</h2>
+      </div>
+      <div class="flex flex-col items-center justify-center p-2 bg-white border border-gray-200 rounded-xl">
+        <img src="./assets/bonus1.png" class="w-10 h-10 object-contain" alt="">
+        <h2 class="text-sm mt-1">Bonus</h2>
+      </div>
+      <div class="flex flex-col items-center justify-center p-2 bg-white border border-gray-200 rounded-xl">
+        <img src="./assets/purse1.png" class="w-10 h-10 object-contain" alt="">
+        <h2 class="text-sm mt-1">Pay Bill</h2>
+      </div>
+      <div class="flex flex-col items-center justify-center p-2 bg-white border border-gray-200 rounded-xl">
+        <img src="./assets/transaction1.png" class="w-10 h-10 object-contain" alt="">
+        <h2 class="text-sm mt-1">Transactions</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- cash out Form -->
+  <section class="w-full max-w-lg mt-6 px-4">
+    <h2 class="text-lg font-semibold text-[#080808f5]">Add Money</h2>
+
+    <form class="mt-4 bg-white rounded-lg shadow-sm">
+     
+      <div class="px-4 py-3">
+        <label class="text-[#080808a9] font-medium text-sm">Bank Account Number</label>
+        <input type="text" id="account_num" placeholder="Enter 11 digit account number" class="w-full mt-2 rounded-full input" />
+      </div>
+      <div class="px-4 py-3">
+        <label class="text-[#080808a9] font-medium text-sm">Amount to Add</label>
+        <input type="text" id="amount_add" placeholder="Enter amount" class="w-full mt-2 rounded-full input" />
+      </div>
+      <div class="px-4 py-3">
+        <label class="text-[#080808a9] font-medium text-sm">Pin Number</label>
+        <input type="password" id="Pin_add" maxlength="4" placeholder="Enter 4 digit pin" class="w-full mt-2 rounded-full input" />
+      </div>
+      <div class="px-4 py-4">
+        <input id="money_button" type="button" value="Add Money" class="w-full rounded-full btn bg-[#0874F2] text-white font-semibold text-lg" />
+      </div>
+    </form>
+  </section>
+
+  <script src="./home.js"></script>
+</body>
+</html>

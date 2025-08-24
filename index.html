@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank app</title>
+    <link rel="shortcut icon" href="./payoo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./tailwind.css">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex flex-col items-center justify-center h-[100vh] bg-[#F4F5F7]">
+    <div class="h-32 w-[24rem] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center">
+
+      <img src=".//assets/Group.png" alt="">
+    </div>
+     
+    <section class="max-w-lg w-[28rem] h-[22.5rem] mx-auto rounded-lg bg-white ">
+        
+            <form class="p-8 mx-auto mt-8 ">
+                <label class="text-[#080808] font-medium" for="number">Mobile Number</label> <br>
+                <input type="text" id="number" name="number" placeholder=" Enter your number " class="w-full px-5 py-4 mt-3 mb-4 rounded-full input" /> <br>
+                <label class="text-[#080808] font-medium " for="pin">4 Digit Pin</label> <br>
+                <input type="text" id="pin" name="number" placeholder="Enter 4 Digit Pin" class="w-full px-5 py-4 mt-3 rounded-full input" /> <br>
+                <button id="btn_login" class="w-full mt-4 rounded-full btn bg-[#0874F2] text-white font-bold text-xl py-6 ">Login</button>
+            </form>
+            
+    </section>
+ 
+
+<script src="./index.js"></script>
+</body>
+</html>
